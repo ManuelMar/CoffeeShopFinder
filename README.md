@@ -27,7 +27,6 @@ For development and server reset on code changes:
 
 `$ npm run dev`
 
-to start up the server on the PORT specified in the config/prod.js file.
 
 ## CRUD End Point Overview With Examples:
 ### Create:
