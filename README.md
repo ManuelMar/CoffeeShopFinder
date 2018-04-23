@@ -1,4 +1,4 @@
-#KinsaCoffeeShopFinder
+# KinsaCoffeeShopFinder:
 This simple REST API build on Node and Express provides endpoints to gain more information about the coffee shops that are "subscribed" to our service (input as csv). Per the spec, please note the data only lives on server memory and will not be persisted after restarting the server.
 This API provides endpoints for the basic CRUD operations and also uses geocoding to return the nearest coffee shop.
 
