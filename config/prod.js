@@ -1,7 +1,7 @@
 module.exports = {
   geoCoderConf: {
     provider: 'google',
-    apiKey: 'ADD YOUR API KEY HERE'
+    apiKey: 'INSERT YOUR GOOGLE API HERE'
   },
   pathData: 'data/locations.csv',
   port: 5000

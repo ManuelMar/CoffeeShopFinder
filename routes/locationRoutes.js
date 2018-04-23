@@ -10,7 +10,6 @@ module.exports = app => {
 
   app.post('/api/create', async (req, res) => {
     data = req.body;
-    console.log(req.body);
     nId = importData.maxId + 1;
     const shop = {
       id: nId,
@@ -81,9 +80,9 @@ module.exports = app => {
     }
   });
 
-  app.post('/api/getNearest', async (req, res) => {
+  app.put('/api/read/nearest/:address', async (req, res) => {
     console.log('get nearest');
-    const qryStr = req.body.address;
+    const qryStr = req.params.address;
     geoCoding.findNearest(qryStr, importData.coffeeShops).then(nearestShop => {
       if (nearestShop) {
         res.send(200, nearestShop);
