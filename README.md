@@ -29,15 +29,15 @@ For development and server reset on code changes:
 
 to start up the server on the PORT specified in the config/prod.js file.
 
-### CRUD End Point Overview With Examples:
-## Create:
+## CRUD End Point Overview With Examples:
+### Create:
 Add coffee shop in request to data store:
 post /api/create
 
 Example:
   `$ curl -i -H "Content-Type: application/json" -X POST -d '{"name":"Manny's Coffee Shop","address":"6514 Ridge Road","latitude":41.3869428,"longitude":-81.7353053}' http://localhost:5000/api/create`
 
-## Read:
+### Read:
 Return all location records
 $ get /api/read
 
@@ -50,7 +50,7 @@ $ put /api/read/:id
 Example:
   `$ curl -i http://localhost:5000/api/read/3`
 
-## Update:
+### Update:
 Given an id and updated coffee shop information, modify the corresponding record
 
 $ post /api/update
@@ -58,7 +58,7 @@ $ post /api/update
 Example:
   `$ curl -i -H "Content-Type: application/json" -X POST -d '{"id": 2, "name":"Pam's Coffee Shop","address":"6513 Ridge Road","latitude":41.3869428,"longitude":-81.7353053}' http://localhost:5000/api/update`
 
-## Delete:
+### Delete:
 Delete record with given id:
 
 $ delete /api/delete
@@ -66,7 +66,7 @@ $ delete /api/delete
 Example:
 `$ curl -i -X "DELETE" http://localhost:5000/api/delete/3`
 
-## Find Nearest
+### Find Nearest
 Find nearest coffee shop to given address string
 
 $ put /api/read/nearest/:address
